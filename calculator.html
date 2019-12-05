@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <style>
+        .num {
+            background-color: gray;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 1px solid red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>number="1"</p>
+    <button>click</button>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="num">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+        </div>
+        <div class="row">
+            <div class="num">4</div>
+            <div class="num">5</div>
+            <div class="num">6</div>
+        </div>
+        <div class="row">
+            <div class="num">7</div>
+            <div class="num">8</div>
+            <div class="num">9</div>
+        </div>
+        <div class="row">
+            <div class="num">0</div>
+
+        </div>
+
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+        /*$(function() {
+                                                                                    $(".num").click(function() {
+                                                                                        alert("Ho gya ");
+                                                                                    });*/
+
+        /*  $(".num").mouseenter(function() {
+                alert("hii double click");
+            });
+        });*/
+
+        $(function() {
+
+            $(".num").click(function() {
+
+                alert("You have clicked no :: " + $(this).html());
+
+            });
+        });
+    </script>
+</body>
+
+</html>
